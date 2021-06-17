@@ -13,10 +13,8 @@
                         </div>
                         <h3>{{ $element.name }}</h3>
                         
-                        {{ if $element.cran }}
-		<p><img src="https://img.shields.io/badge/Disponible%20en-CRAN-brightgreen&?labelColor=white"></p>
-		{{ else }}
-		<p><img src="https://img.shields.io/badge/Disponible%20en-GitHub-violet&?labelColor=white&color=986dbd"></p>
+                        {{ if eq $element.cran "fab fa-r-project"}}
+		<p><img src="https://www.r-pkg.org/badges/ago/{{ $element.name }}"></p>
 		{{ end }}
                         <p>{{ $element.description | markdownify }}</p>
                         
