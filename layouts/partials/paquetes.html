@@ -14,7 +14,9 @@
                         <h3>{{ $element.name }}</h3>
                         
                         {{ if $element.cran }}
-		<p><img src="https://img.shields.io/badge/CRAN-Disponible-brightgreen"></p>
+		<p><img src="https://img.shields.io/badge/Disponible-CRAN-brightgreen"></p>
+		{{ else }}
+		<p><img src="https://img.shields.io/badge/Disponible-GitHub-violet&?color=986dbd"></p>
 		{{ end }}
                         <p>{{ $element.description | markdownify }}</p>
                         
