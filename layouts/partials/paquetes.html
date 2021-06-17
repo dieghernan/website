@@ -13,7 +13,7 @@
                         </div>
                         <h3>{{ $element.name }}</h3>
                         
-                        {{ if eq $element.cran "fab fa-r-project"}}
+                        {{ if eq $element.icon "fab fa-r-project"}}
 		<p><img src="https://www.r-pkg.org/badges/ago/{{ $element.name }}"></p>
 		{{ end }}
                         <p>{{ $element.description | markdownify }}</p>
