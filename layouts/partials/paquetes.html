@@ -12,10 +12,11 @@
                             <i class="{{ .icon }}"></i>
                         </div>
                         <h3>{{ $element.name }}</h3>
-                        <p>{{ $element.description | markdownify }}</p>
+                        
                         {{ if $element.cran }}
-		<p>Disponible en CRAN</p>
+		<p><img src="https://img.shields.io/badge/CRAN-Disponible-brightgreen"></p>
 		{{ end }}
+                        <p>{{ $element.description | markdownify }}</p>
                         
                         
                     </div>
