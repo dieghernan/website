@@ -8,7 +8,11 @@
 		{{ end }}
 				<div class="col-md-4">
                     <div class="box-simple">
-                        <div class="icon">
+                      {{ if eq $element.icon "fab fa-r-project"}}
+                        <div class="icon cran">
+                      {{ else }}
+                       <div class="icon">
+                      {{ end }}
                             <i class="{{ .icon }}"></i>
                         </div>
                         <h3>{{ $element.name }}</h3>
